@@ -9,11 +9,9 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
-import { Toast } from "../MiniComponents/Toast";
-import ToolTip from "../MiniComponents/ToolTip";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
+import { Toast } from "../MiniComponents/Toast.js";
+import ToolTip from "../MiniComponents/ToolTip.js";
 import "../style/blog.css";
 import {
   Drawer,
@@ -24,85 +22,8 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from "@chakra-ui/react";
-import VerifyBadge from "../MiniComponents/VerifyBadge";
+import VerifyBadge from "../MiniComponents/VerifyBadge.js";
 
-// Speechify Play Blog Text to Speech
-import(
-  "https://storage.googleapis.com/speechify-api-cdn/speechifyapi.min.mjs"
-).then(async (speechifyWidget) => {
-  // this parent element for your article or listenable content
-  const articleRootElement = document.getElementById("blog");
-  // this is the header of your article; the inline player will be placed under this heading
-  const articleHeading = articleRootElement.querySelector("h1");
-
-  const widget = speechifyWidget.makeSpeechifyExperience({
-    rootElement: articleRootElement,
-    inlinePlayerElement: articleHeading,
-    visibility: {
-      showWidget: false,
-      showWidgetOnPlay: true,
-      showInlinePlayer: false,
-      showInlinePlayerOnPlay: false,
-    },
-  });
-  await widget.mount();
-
-  let player = await widget.getPlayerState();
-  let totalSeconds = Math.round(player.audioLengthSeconds);
-
-  let roundedMinutes = ~~(totalSeconds / 60);
-
-  // Check Is roundedMinutes 0 for Change Text to Seconds of read
-  if (roundedMinutes === 0) {
-    document.getElementById("blog_readtime").innerText = "Seconds of read";
-  } else {
-    // Setting how many times taken for read this story
-    document.getElementById("blog_readtime").innerText =
-      roundedMinutes + " min read";
-  }
-
-  // Check is listening paused
-  let isPaused;
-
-  document.getElementById("listen_button").onclick = (e) => {
-    if (e.target.getAttribute("name") === "play-circle") {
-      widget.play();
-      e.target.setAttribute("name", "pause-circle");
-      isPaused = false;
-
-      setInterval(() => {
-        if (!isPaused) {
-          let extraSeconds = totalSeconds % 60;
-          let minutes = ~~(totalSeconds / 60);
-          let time = minutes + ":" + extraSeconds;
-
-          console.log(time);
-
-          if (time != "0:0") {
-            if (extraSeconds < 10) {
-              let replacedTime = time.substring(0, 2) + "0" + time.substring(2);
-              document.getElementById("blog_listen_text").innerText =
-                replacedTime;
-              totalSeconds = totalSeconds - 1;
-            } else {
-              document.getElementById("blog_listen_text").innerText = time;
-              totalSeconds = totalSeconds - 1;
-            }
-          } else {
-            document.getElementById("blog_listen_text").innerText = "Listen";
-            e.target.setAttribute("name", "play-circle");
-            isPaused = true;
-            document.querySelector("body").click();
-          }
-        }
-      }, 1000);
-    } else {
-      widget.pause();
-      e.target.setAttribute("name", "play-circle");
-      isPaused = true;
-    }
-  };
-});
 
 function Blog() {
   // console.log(SyntaxHighlighter.supportedLanguages);

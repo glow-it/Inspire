@@ -3,11 +3,6 @@ import {
     Modal,
     ModalOverlay,
     ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    Button,
   } from '@chakra-ui/react'
 
 function AuthModal({onClose,isOpen,isLogin}) {

@@ -1,11 +1,11 @@
 import { Popover, PopoverArrow, PopoverContent, PopoverTrigger, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
-import { Toast } from "../MiniComponents/Toast";
-import ToolTip from "../MiniComponents/ToolTip";
-import VerifyBadge from "../MiniComponents/VerifyBadge";
-import { abbreviateNumber } from "../Tools/abbreviateNumber";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
+import { Toast } from "../MiniComponents/Toast.js";
+import ToolTip from "../MiniComponents/ToolTip.js";
+import VerifyBadge from "../MiniComponents/VerifyBadge.js";
+import { abbreviateNumber } from "../Tools/abbreviateNumber.js";
 
 function Profile() {
   let params = useParams();

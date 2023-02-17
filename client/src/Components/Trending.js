@@ -1,5 +1,5 @@
 import React from "react";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
 
 
 function Trending() {

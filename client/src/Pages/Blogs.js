@@ -1,9 +1,9 @@
 import { useQuery, useToast } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
-import { Toast } from "../MiniComponents/Toast";
-import ToolTip from "../MiniComponents/ToolTip";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
+import { Toast } from "../MiniComponents/Toast.js";
+import ToolTip from "../MiniComponents/ToolTip.js";
 import {
   Popover,
   PopoverTrigger,
@@ -15,7 +15,7 @@ import {
   PopoverCloseButton,
   PopoverAnchor,
 } from "@chakra-ui/react";
-import VerifyBadge from "../MiniComponents/VerifyBadge";
+import VerifyBadge from "../MiniComponents/VerifyBadge.js";
 
 function Blogs() {
   let navigate = useNavigate();

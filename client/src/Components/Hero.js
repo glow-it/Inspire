@@ -1,6 +1,6 @@
 import { useDisclosure } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import AuthModal from "../MiniComponents/AuthModal";
+import AuthModal from "../MiniComponents/AuthModal.js";
 
 function Hero() {
   useEffect(() => {

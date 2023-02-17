@@ -1,9 +1,9 @@
 import { useToast } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import Blog from "../Components/Blog";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
-import { Toast } from "../MiniComponents/Toast";
-import ToolTip from "../MiniComponents/ToolTip";
+import Blog from "../Components/Blog.js";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
+import { Toast } from "../MiniComponents/Toast.js";
+import ToolTip from "../MiniComponents/ToolTip.js";
 import {
   Popover,
   PopoverTrigger,
@@ -15,8 +15,8 @@ import {
   PopoverCloseButton,
   PopoverAnchor,
 } from "@chakra-ui/react";
-import VerifyBadge from "../MiniComponents/VerifyBadge";
-import { abbreviateNumber } from "../Tools/abbreviateNumber";
+import VerifyBadge from "../MiniComponents/VerifyBadge.js";
+import { abbreviateNumber } from "../Tools/abbreviateNumber.js";
 import { useNavigate } from "react-router-dom";
 
 function BlogPage() {
@@ -42,22 +42,15 @@ function BlogPage() {
               Font Mans <VerifyBadge followers_count={followers_count} />
             </span>
             <span className="text-slate-400 pt-1.5 text-sm flex">
-              4 days ago <span className="mx-2">·</span>{" "}
+              4 days ago
               <div id="blog_readtime"></div>
               <span className="ml-2 mr-2 cursor-pointer transition-colors flex">
-                <span className="mx-1">·</span>
+                
                 {isMember ? (
-                  <span className="flex items-center justify-center text-indigo-500 text-lg cursor-pointer transition-colors ml-1">
-                    <ion-icon id="listen_button" name="play-circle"></ion-icon>{" "}
-                    <span
-                      id="blog_listen_text"
-                      className="flex ml-1 items-center justify-center text-sm"
-                    >
-                      Listen
-                    </span>
-                  </span>
+                 <div></div>
                 ) : (
                   <span className="ml-1">
+                    <span className="mr-2">·</span>
                     <MemberOnlyStory />{" "}
                     <span className="ml-1">Member only story</span>
                   </span>

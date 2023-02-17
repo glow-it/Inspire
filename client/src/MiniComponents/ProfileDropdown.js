@@ -9,7 +9,7 @@ import {
     MenuOptionGroup,
     MenuDivider,
   } from '@chakra-ui/react'
-import MemberOnlyStory from './MemberOnlyStory'
+import MemberOnlyStory from './MemberOnlyStory.js'
 
 function ProfileDropdown({target}) {
   return (

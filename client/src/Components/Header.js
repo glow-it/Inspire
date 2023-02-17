@@ -9,8 +9,8 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import AuthModal from "../MiniComponents/AuthModal";
-import ProfileDropdown from "../MiniComponents/ProfileDropdown";
+import AuthModal from "../MiniComponents/AuthModal.js";
+import ProfileDropdown from "../MiniComponents/ProfileDropdown.js";
 
 function Header() {
 

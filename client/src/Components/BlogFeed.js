@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
-import $ from "jquery";
+import MemberOnlyStory from "../MiniComponents/MemberOnlyStory.js";
 
 function BlogFeed() {
   useEffect(() => {

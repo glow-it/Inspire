@@ -1,7 +1,7 @@
 import React from 'react'
-import BlogFeed from '../Components/BlogFeed'
-import Hero from '../Components/Hero'
-import Trending from '../Components/Trending'
+import BlogFeed from '../Components/BlogFeed.js'
+import Hero from '../Components/Hero.js'
+import Trending from '../Components/Trending.js'
 
 function Home() {
   return (

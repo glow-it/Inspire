@@ -1,17 +1,16 @@
 import "./App.css";
-import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
 import { Route, Routes, Link } from "react-router-dom";
-import Home from "./Pages/Home";
-import PageNotFound from "./Pages/PageNotFound";
-import Header from "./Components/Header";
+import Home from "./Pages/Home.js";
+import PageNotFound from "./Pages/PageNotFound.js";
+import Header from "./Components/Header.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Blogs from "./Pages/Blogs";
+import Blogs from "./Pages/Blogs.js";
 import $ from "jquery";
-import BlogPage from "./Pages/BlogPage";
-import Profile from "./Pages/Profile";
+import BlogPage from "./Pages/BlogPage.js";
+import Profile from "./Pages/Profile.js";
 
 function App() {
   useEffect(() => {
