@@ -6,14 +6,14 @@ function PageNotFound() {
     <div id="app">
       <div id="wrapper" className="lg:scale-[3] scale-[1.5]">
         <h1
-          class="glitch text-black font-black"
+          class="glitch text-black font-extrabold"
           data-text="
 404"
         >
           404
         </h1>
       </div>
-      <span class="sub text-black lg:tracking-[1rem] tracking-[0.5rem] font-medium  text-center lg:text-2xl text-xl lg:mt-16 ">
+      <span class="sub lg:tracking-[1rem] tracking-[0.5rem] font-medium  text-center lg:text-2xl text-xl lg:mt-16 ">
         PAGE NOT FOUND
       </span>
 

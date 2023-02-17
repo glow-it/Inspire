@@ -33,8 +33,9 @@ function Header() {
     }
   }, [location]);
 
+
   return (
-    <div className={`w-full h-20 z-50 bg-white flex ${isHome ? 'sticky top-0 border-b-slate-800' : 'border-b-slate-200'} items-center border-b `}>
+    <header className={`w-full darkbg-gray-900 darktext-white h-20 z-50 bg-white flex ${isHome ? 'sticky top-0 border-b-slate-800' : 'border-b-slate-200 darkborder-b-slate-800'} items-center border-b `}>
       {/* Modal For Authentication */}
       <AuthModal onClose={onClose} isOpen={isOpen} isLogin={isLogin} />
       <div className="w-1/2 h-full flex items-center">
@@ -44,6 +45,7 @@ function Header() {
       {isHome && isHome ? (
         <div className="w-1/2 h-full  flex items-center justify-end">
           <ul className="flex">
+          
             <li className="font-semibold mx-3 cursor-pointer hover:text-indigo-500 transition-colors">
               Membership
             </li>
@@ -66,7 +68,7 @@ function Header() {
               setIsLogin(false);
               onOpen();
             }}
-            className="py-2 px-6 bg-slate-900 hover:bg-slate-800 transition-colors text-white mr-28 font-medium rounded-full"
+            className="py-2  px-6  bg-slate-900 text-white hover:bg-slate-800 mr-28 font-medium rounded-full transition-colors"
           >
             Get started
           </button>
@@ -82,6 +84,8 @@ function Header() {
               rounded="full"
               focusBorderColor="black.500"
               variant='filled'
+              border='1px'
+              _focus={{border:'1px solid'}}
             />
             <InputLeftElement width="4.5rem">
               <span className="px-2 text-slate-400 py-2 rounded-full text-xl flex items-center justify-center">
@@ -122,7 +126,7 @@ function Header() {
           />
         </div>
       )}
-    </div>
+    </header>
   );
 }
 

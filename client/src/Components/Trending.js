@@ -4,7 +4,7 @@ import MemberOnlyStory from "../MiniComponents/MemberOnlyStory";
 
 function Trending() {
   return (
-    <div className="   py-14 border-b border-b-slate-800">
+    <div className="trending darkbg-slate-900 darktext-white py-14 border-b border-b-slate-200">
       <div className="flex items-center pl-28">
         <h1 className="text-lg font-semibold  mb-2 flex items-center justify-center ">
           {" "}
@@ -16,7 +16,8 @@ function Trending() {
       </div>
 
       <div className="flex items-center justify-center">
-        <div className=" w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
+
+        <div className="trending_blog_wrapper darkbg-slate-900 darktext-white darkborder-slate-400 darkhover:border-white w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
           <p className="font-extrabold absolute right-4 top-2 text-slate-500">01</p>
 
           <div className="flex items-center">
@@ -38,7 +39,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className=" w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
+        <div className="trending_blog_wrapper darkbg-slate-900 darktext-white darkborder-slate-400 darkhover:border-white w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
           <p className="font-extrabold absolute right-4 top-2 text-slate-500">02</p>
 
           <div className="flex items-center">
@@ -60,7 +61,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className=" w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
+        <div className="trending_blog_wrapper darkbg-slate-900 darktext-white darkborder-slate-400 darkhover:border-white w-96 bg-slate-50 mr-6 my-3 rounded-lg flex flex-col justify-center cursor-pointer hover:border-slate-800 relative transition-colors border py-4 px-6">
           <p className="font-extrabold absolute right-4 top-2 text-slate-500">03</p>
 
           <div className="flex items-center">

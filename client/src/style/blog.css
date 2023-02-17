@@ -1,0 +1,132 @@
+center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+strong{
+    font-family: 'Satoshi-extrabold';
+}
+.elemwrapper{
+    width: 100%;
+    padding: 10px 0;
+}
+.elemwrapper h1 {
+    font-size: 50px;
+    line-height: 3.7rem;
+    font-family: 'Satoshi-extrabold';
+}
+.elemwrapper h2{
+    font-size: 25px;
+    font-family: 'Satoshi-bold';
+}
+.elemwrapper h3{
+    font-size: 20px;
+    font-family: 'Satoshi-semibold';
+}
+.elemwrapper h4{
+    font-size: 25px;
+    font-family: 'Satoshi-semibold';
+}
+underline{
+    text-decoration: underline;
+}
+.elemwrapper p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+highlight{
+    background-color: #6365f124;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    font-family: inherit;
+}
+highlight:hover{
+    background-color: #6365f164;
+}
+slatetext{
+    font-size: 18px;
+    color: slategray;
+}
+.elemwrapper ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 36px;
+}
+.elemwrapper ul li{
+    padding: 7px 0;
+}
+.elemwrapper ol li{
+    padding: 10px 0;
+}
+.elemwrapper ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 36px;
+}
+bghighlight{
+    background-color: rgba(112, 128, 144, 0.157);
+    padding: 2px 10px;
+}
+.elemwrapper img{
+    max-height: 500px;
+}
+.elemwrapper a{
+    text-decoration: underline;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.elemwrapper a:hover{
+    text-decoration: underline;
+}
+divider{
+    font-size: 40px;
+}
+blockquote{
+    padding: 10px 25px;
+    border-left: 2px solid black;
+}
+blockquote h1{
+    display: flex;
+    font-size: 20px !important;
+}
+blockquote p{
+    color: slategray;
+    margin-top: 10px;
+}
+italic{
+    font-style: oblique;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .elemwrapper img{
+    height: 100%;
+  }
+  .elemwrapper img,iframe,video,divider{
+    margin: 20px 0;
+  }
+
+  .blog-lock-wrapper{
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: animate_blog_lock_wrapper 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes animate_blog_lock_wrapper{
+    0%{
+        bottom: -50%;
+    }
+    100%{
+bottom: -8rem;
+    }
+  }

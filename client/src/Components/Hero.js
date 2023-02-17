@@ -22,7 +22,7 @@ function Hero() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <div className="w-full h-[550px] z-10 flex border-b border-b-slate-800">
+    <div className="hero darkbg-slate-900 darktext-white w-full h-[550px] z-10 flex border-b border-b-slate-200">
       {/* Modal For Authentication */}
       <AuthModal onClose={onClose} isOpen={isOpen} isLogin={false} />
       <div className="w-1/2  relative h-full  flex pl-28 flex-col pt-20">
@@ -39,13 +39,13 @@ function Hero() {
         </p>
 
         <div className="flex">
-          <button onClick={()=>{onOpen()}} className="py-3 w-44 px-6 mt-8 bg-slate-900 hover:bg-slate-800 transition-colors text-white font-medium rounded-full">
+          <button onClick={()=>{onOpen()}} className="py-3 darkborder darkborder-slate-400 darkhover:border-white w-44 px-6 mt-8 bg-slate-900 hover:bg-slate-800 transition-colors start_reading_button text-white font-medium rounded-full">
             Start reading
           </button>
 
-          <button className="py-3 w-44 px-6 mt-8 transition-colors flex items-center justify-center text-slate-900  font-medium rounded-full">
+          <button className="how_it_works_button darktext-white py-3 w-44 px-6 mt-8 transition-colors flex items-center justify-center text-slate-900 bg  font-medium rounded-full">
             {" "}
-            <span className="flex text-xl text-indigo-500 items-center justify-center mr-1">
+            <span className="flex text-xl  text-indigo-500 items-center justify-center mr-1">
               <ion-icon name="play-circle"></ion-icon>
             </span>{" "}
             How it works

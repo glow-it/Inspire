@@ -19,7 +19,7 @@ function BlogFeed() {
   return (
     <div
       id="home_blog_section"
-      className="home-blog-section h-screen w-full flex "
+      className="home-blog-section darkbg-slate-900 darktext-white h-screen w-full flex "
     >
       <div className=" w-[60%]    flex flex-col  pr-12 pl-28 pt-32">
         {[
@@ -65,7 +65,7 @@ function BlogFeed() {
 
       <div
         id="home_blog_categories_section"
-        className="w-[35%] h-full px-6  pt-32 sticky top-0"
+        className="w-[35%] h-full px-6 pt-32  sticky top-0"
       >
         <div id="home_blog_categories_section_wrapper">
           <div className="flex">
@@ -74,31 +74,31 @@ function BlogFeed() {
             </h1>
           </div>
           <div className="flex items-center py-4 flex-wrap w-[390px] ">
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Programming
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Data science
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Technology
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Self improvement
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Writing
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Relationships
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Machine Learning
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Productivity
             </p>
-            <p className="px-8 mr-3 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
+            <p className="px-8 mr-3 darktext-white darkborder-slate-400 darkhover:border-white darkhover:bg-slate-900 mb-3 py-2 font-medium cursor-pointer hover:bg-slate-100 rounded-full text-slate-800 border border-slate-800">
               Politics
             </p>
           </div>

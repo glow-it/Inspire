@@ -24,7 +24,7 @@ function ProfileDropdown({target}) {
       </MenuItem>
 
       <MenuItem my='2' color='slategray' py='2' rounded='xl' px='4' >
-        <span className='flex items-center justify-center mr-2' ><ion-icon name="bookmarks-outline"></ion-icon></span> Lists
+        <span className='flex items-center justify-center mr-2' ><ion-icon name="bookmarks-outline"></ion-icon></span> Reading list
       </MenuItem>
 
       <MenuItem my='2' color='slategray' py='2' rounded='xl' px='4' >
@@ -43,10 +43,6 @@ function ProfileDropdown({target}) {
 
       <MenuItem my='2' color='slategray' py='2' rounded='xl' px='4' >
         Refine recommentations
-      </MenuItem>
-
-      <MenuItem my='2' color='slategray' py='2' rounded='xl' px='4' >
-        Manage publications
       </MenuItem>
 
       <MenuDivider my='4' />
