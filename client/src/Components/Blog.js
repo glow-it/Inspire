@@ -1050,7 +1050,6 @@ useEffect(() => {
                       <p className="text-sm">
                         Font Mans <VerifyBadge followers_count={100500} />
                         <span className="text-slate-400">
-                          {" "}
                           · 4 days ago ·{" "}
                           <span className="ml-1 mr-2 cursor-pointer">
                             <MemberOnlyStory />

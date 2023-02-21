@@ -2,6 +2,7 @@ import "./App.css";
 import "tippy.js/dist/tippy.css";
 import { Route, Routes, Link } from "react-router-dom";
 import Home from "./Pages/Home.js";
+import Write from "./Pages/Write.js";
 import PageNotFound from "./Pages/PageNotFound.js";
 import Header from "./Components/Header.js";
 import AOS from "aos";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/:author/:blog_id" element={<BlogPage />} />
         <Route path="/:profilename" element={<Profile />} />
+        <Route path="/write" element={<Write />} />
       </Routes>
     </div>
   );

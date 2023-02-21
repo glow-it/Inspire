@@ -41,7 +41,7 @@ function BlogPage() {
             <span className="capitalize hover:text-slate-500 transition-colors cursor-pointer">
               Font Mans <VerifyBadge followers_count={followers_count} />
             </span>
-            <span className="text-slate-400 pt-1.5 text-sm flex">
+            <span className="text-slate-400 text-sm flex">
               4 days ago
               <div id="blog_readtime"></div>
               <span className="ml-2 mr-2 cursor-pointer transition-colors flex">
